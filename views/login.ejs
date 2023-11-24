@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+<body>
+  <main class="main">
+    <div class="container">
+      <section class="wrapper">
+        <div class="heading">
+          <h1 class="text text-large">Login Form</h1>
+          <p class="text text-normal">Register user? <span><a href="/" class="text text-links">Register</a></span>
+          </p>
+        <% if (error.length > 0) { %>
+          <p class="error"> <%= error  %></p>
+         
+        <% } %>
+        </div>
+        <form action="/login"  method="post" class="form">
+          <!-- <div class="input-control">
+            <label for="email" class="input-label" hidden>Username</label>
+            <input type="text" name="username" id="email" class="input-field" placeholder="Your Username">
+          </div> -->
+          <div class="input-control">
+            <label for="username" class="input-label" hidden>Username</label>
+            <input type="text" name="username" id="username" class="input-field" placeholder="Your Username">
+          </div>
+          <div class="input-control">
+            <label for="password" class="input-label" hidden>Password</label>
+            <input type="password" name="password" id="password" class="input-field" placeholder="Password">
+          </div>
+          <!-- <div class="input-control">
+            <label for="password" class="input-label" hidden>Full Name</label>
+            <input type="text" name="fullname" id="password" class="input-field" placeholder="Full Name">
+          </div> -->
+          <div class="input-control">
+            <a href="/forgot" class="text text-links">Forgot Password</a>
+            <input type="submit" name="submit" class="input-submit" value="Login Account" >
+          </div>
+        </form>
+        <div class="striped">
+          <span class="striped-line"></span>
+          <span class="striped-text">Or</span>
+          <span class="striped-line"></span>
+        </div>
+        <div class="method">
+          <div class="method-control">
+            <a href="#" class="method-action">
+              <i class="ion ion-logo-google"></i>
+              <span>Sign in with Google</span>
+            </a>
+          </div>
+          <div class="method-control">
+            <a href="#" class="method-action">
+              <i class="ion ion-logo-facebook"></i>
+              <span>Sign in with Facebook</span>
+            </a>
+          </div>
+     
+        </div>
+      </section>
+    </div>
+  </main>
+</body>
+</html>

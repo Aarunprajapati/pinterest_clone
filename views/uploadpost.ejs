@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/stylesheets/uploadpost.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="card-section">
+        <div class="card">
+          <form action="/upload" method="post" enctype="multipart/form-data">
+            <textarea
+              class="upload-img"
+              type="text"
+              name="filecaption"
+              placeholder="Some Caption"
+              rows="15"
+              cols="80"
+            ></textarea>
+            <input class="upload-img1" type="file" name="file" id="image" />
+            <div class="btn">
+              <input
+                class="upload-btn"
+                type="submit"
+                name="submit"
+                value="upload"
+              />
+              <a href="/profile" class="backbtn">Back</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
